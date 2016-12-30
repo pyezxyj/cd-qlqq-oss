@@ -28,6 +28,7 @@ $(function() {
 	},{
 		title: '订单总额',
 		field: 'totalAmount',
+		formatter: moneyFormat,
 		readonly:true
 	}, {
 		title: '订单状态',

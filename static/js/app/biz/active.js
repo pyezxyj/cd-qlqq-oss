@@ -27,13 +27,13 @@ $(function () {
         title: '最近更新人',
        // valueName: "updater",
         formatter: function(value, row, index){
-        	return value || row['updater'];
+        	return row['updater'] || value;
         }
     },{
         field: 'publishDatetime',
         title: '最近更新时间',
         formatter: function(value, row, index){
-        	return dateTimeFormat(value) || dateTimeFormat(row['updater']);
+        	return row['updateDatetime'] ? dateTimeFormat(row['updateDatetime']) : dateTimeFormat(value);
         }
     },{
 		title: '备注',

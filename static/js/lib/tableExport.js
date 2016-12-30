@@ -372,7 +372,11 @@
               function(cell, row, col) {
                 if (cell != null) {
                   var tdstyle = '';
-                  var tdcss = $(cell).data("tableexport-msonumberformat");
+                  var cell = $(cell);
+                  var tdcss = cell.data("tableexport-msonumberformat");
+                  if(!tdcss){
+                	  cell.hasClass("tableexport-msonumberformat1") && (tdcss = cell.text());
+                  }
 
                   if (typeof tdcss == 'undefined' && typeof defaults.onMsoNumberFormat === 'function')
                     tdcss = defaults.onMsoNumberFormat(cell, row, col);

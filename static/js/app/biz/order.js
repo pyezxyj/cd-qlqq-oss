@@ -15,7 +15,8 @@ $(function () {
         value:sessionStorage.getItem('userName')
     },{
         field: 'idNo',
-        title: '身份证号'
+        title: '身份证号',
+        class: "tableexport-msonumberformat1"
     },{
         field: 'mobile',
         title: '手机号',
