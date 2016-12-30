@@ -3,12 +3,11 @@ $(function() {
 	var code = getQueryString('code');
 	var view = !!getQueryString('v');
 	
-	var fields = [
-	              //{
-//		field: 'kind',
-//		type: 'hidden',
-//		value: '01'
-	//}, 
+	var fields = [{
+		field: 'approver',
+		type: 'hidden',
+		value: sessionStorage.getItem('userName') 
+	}, 
 	{ 
 		 field:"publisher",
 		 type:'hidden',

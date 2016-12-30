@@ -21,7 +21,7 @@ $(function () {
         field: 'idNo',
         title: '身份证号'
     },{
-    	field:'createDatetime',
+    	field:'updateDatetime',
         title: '加入时间',
         formatter: dateTimeFormat
     }];

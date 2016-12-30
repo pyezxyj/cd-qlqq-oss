@@ -5,8 +5,7 @@ $(function () {
         checkbox: true
     },{
         field: 'code',
-        title: '订单号',
-        search: true
+        title: '订单号'
     }, {
         field: 'productName',
         title: '参与活动'
@@ -43,6 +42,10 @@ $(function () {
         field: 'payDatetime',
         title: '支付时间',
         formatter: dateTimeFormat,
+        type1: 'date',
+        title1: '支付时间',
+        field1: 'payBeginDatetime',
+        field2: 'payEndDatetime',
         search: true
     },{
     	title: '备注',
@@ -63,7 +66,7 @@ $(function () {
             toastr.info("请选择记录");
             return;
         }
-        window.location.href = "order_addedit.html?code=" + selRecords[0].code + "&name=3";
+        window.location.href = "order_addedit.html?code=" + selRecords[0].code + "&name=5";
     });
     $('#contactBtn').click(function () {
         var selRecords = $('#tableList').bootstrapTable('getSelections');
@@ -79,7 +82,7 @@ $(function () {
             toastr.info("请选择记录");
             return;
         }
-        window.location.href = "order_addedit.html?code=" + selRecords[0].code + "&name=4";
+        window.location.href = "order_addedit.html?code=" + selRecords[0].code + "&name=7";
     });
     
     

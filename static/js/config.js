@@ -6,4 +6,4 @@ OSS.mainUrl = '/mainUrl';
 // system
 OSS.system = 'CD-CQQ000004';
 // picUrl
-OSS.picBaseUrl = 'http://oigx51fc5.bkt.clouddn.com';
+OSS.picBaseUrl = '//image.weride.com.cn';

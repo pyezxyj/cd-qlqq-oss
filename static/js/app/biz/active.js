@@ -24,11 +24,17 @@ $(function () {
         title: '订单总数'
     },{
         field: 'publisher',
-        title: '最近更新人'
+        title: '最近更新人',
+       // valueName: "updater",
+        formatter: function(value, row, index){
+        	return value || row['updater'];
+        }
     },{
         field: 'publishDatetime',
         title: '最近更新时间',
-        formatter: dateTimeFormat
+        formatter: function(value, row, index){
+        	return dateTimeFormat(value) || dateTimeFormat(row['updater']);
+        }
     },{
 		title: '备注',
 		field: 'remark',
