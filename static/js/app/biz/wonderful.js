@@ -56,7 +56,7 @@ $(function() {
             toastr.info("请选择记录");
             return;
         }
-        var msg = "确认上架该活动？";
+        var msg = "确认上架该资讯草稿？";
         if (selRecords[0].status == 1) {
             msg = "确认下架该活动？";
         }
