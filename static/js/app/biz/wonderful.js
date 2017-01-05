@@ -58,7 +58,7 @@ $(function() {
         }
         var msg = "确认上架该资讯草稿？";
         if (selRecords[0].status == 1) {
-            msg = "确认下架该活动？";
+            msg = "确认下架该资讯？";
         }
 
         confirm(msg).then(function() {
